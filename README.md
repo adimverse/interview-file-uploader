@@ -2,6 +2,18 @@
 
 Hi! Welcome to the take home. Here is a bare-bones [Next.js](nextjs.org/) app created with the [t3 app](https://create.t3.gg/)! The bottom of this readme contains some usage tips if you are new to t3 -- essentially it sets up a bit of boilerplate so you can get moving faster.
 
+👩‍💻 ---> Instructions <--- 🧑‍💻
+
+Please enter your query in the search bar.
+Wait a few seconds until the gif images are loaded.
+Click on the image you like, it will become your profile picture.
+Unfortunately, the profile cannot be edited.
+
+In my code, I didn't use tailwind CSS, I chose material UI. I don't think this is a critically important point, but if necessary, I can use tailwind CSS.
+
+I could add gif pagination and profile customization, but it would take more time than allocated for the task.
+
+
 ## Task
 
 Using the [giphy.com API](https://developers.giphy.com/), create an app that accomplishes the following:

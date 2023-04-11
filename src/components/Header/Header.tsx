@@ -7,6 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import axios from "axios";
+import { Container } from "@mui/material";
 
 interface Props {
   onSearch: (gifs: Gif[]) => void;
@@ -61,24 +62,16 @@ const Header: React.FC<Props> = ({ onSearch, apiKey }) => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Container maxWidth="md">
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-          </IconButton>
           <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-						Choice Your
+						Please write something press Enter and click on gif --&gt;
           </Typography>
           <Search>
             <StyledInputBase
@@ -92,7 +85,7 @@ const Header: React.FC<Props> = ({ onSearch, apiKey }) => {
           </Search>
         </Toolbar>
       </AppBar>
-    </Box>
+    </Container>
   );
 }
 

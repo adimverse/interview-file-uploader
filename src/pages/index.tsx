@@ -49,7 +49,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container maxWidth="md">
-
         <Header
             apiKey={API_KEY}
             onSearch={(newGifs: Gif[]) => {

@@ -11,8 +11,8 @@ const Favorites: React.FC<Props> = ({ favorites }) => {
       <div className={styles.profile}>
       <div className={styles.profileImage}>
       {favorites.map((favorite) => (
-        <div key={favorite.id}>
-          <img src={favorite.url} alt={favorite.title} />
+        <div key={favorite.id} style={{width:'200px'}}>
+          <img src={favorite.url} alt={favorite.title} style={{maxWidth: '100%', height: 'auto'}}/>
         </div>
       ))}
       </div>
